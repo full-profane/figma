@@ -94,25 +94,25 @@ main {
    padding: 15px 90px;
 }
 
-.validate {
+.description {
    display: flex;
    flex-direction: column;
    align-items: center;
 }
 
-.validate-info {
-   width: 55%;
+.description-info {
+   width: 80%;
    margin: 30px 0;
 }
 
-.validate_title {
+.description_title {
    font-weight: 600;
-   font-size: 30px;
+   font-size: 32px;
    margin: 10px 0;
    color: #333333;
 }
 
-.validate_description {
+.description_description {
    font-weight: 500;
    font-size: 20px;
    color: #333333;
@@ -127,22 +127,22 @@ main {
    background-repeat: no-repeat;
    height:  300vh;
 }
-.email-part1 {
+.email-part {
    display: flex;
    flex-direction: column;
    width: 60%;
    align-items: center;
 }
-.part1-info {
+.part-info {
    display: flex;
    width: 100%;
    flex-direction: column;
 }
 
-.part1-screen {
+.part-screen {
    display: flex;
    flex-direction: column;
-   margin: 30px 0;
+   margin: 20px 0;
 }
 .screen-first {
    display: flex;
@@ -156,7 +156,7 @@ main {
    margin-right: 40px;
    margin-top: 20px;
 }
-.screen-first_div {
+.screen-first_purple {
    display: block;
    width: 90%;
    background: linear-gradient(180deg,  #291934,
@@ -172,7 +172,7 @@ main {
 .screen-second {
    display: flex;
    flex-direction: row;
-   margin: 50px 0;
+   margin: 30px 0;
 }
 .fa-at {
    margin-right: 40px;
@@ -196,7 +196,7 @@ main {
    align-items: center;
    justify-content: center;
    background: #BDBDBD;
-   height: 60vh;
+   height: 55vh;
    width: 100%;
 }
 
@@ -254,4 +254,9 @@ main {
    font-size: 13px;
 }
 
-
+.screen-first_green {
+   display: block;
+   width: 90%;
+   background: linear-gradient(180deg,  #162E33,
+#41808D );
+}
