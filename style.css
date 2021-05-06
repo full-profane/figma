@@ -12,6 +12,9 @@ header {
    display: flex;
    justify-content: flex-end;
 }
+main {
+   background:#e1e1e133;
+}
 
 .header-main {
    display: flex;
@@ -45,9 +48,9 @@ header {
 .home {
    display: block;
    position: relative;
+   height: 100vh;
 }
 .home-img {
-   z-index: 1;
    position: absolute;
    width: 100%;
 }
@@ -57,8 +60,8 @@ header {
    align-items: center;
    position: absolute;
    width: 100%;
+   height: 100vh;
    background: linear-gradient(180deg,  #050505ed, #8d8d8dd6);
-   z-index: 2;
 }
 .info-text {
    margin:40px 0;
@@ -89,4 +92,101 @@ header {
    color: #fff;
    background:  #BDBDBD;
    padding: 15px 90px;
+}
+
+.validate {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.validate-info {
+   width: 55%;
+   margin: 30px 0;
+}
+
+.validate_title {
+   font-weight: 600;
+   font-size: 30px;
+   margin: 10px 0;
+   color: #333333;
+}
+
+.validate_description {
+   font-weight: 500;
+   font-size: 20px;
+   color: #333333;
+}
+
+.email {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image:url(img/at-sign.png);
+   background-size: 100% 75%;
+   background-repeat: no-repeat;
+   height:  300vh;
+}
+.email-part1 {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   align-items: center;
+}
+.part1-info {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+}
+
+.part1-screen {
+   display: flex;
+   flex-direction: column;
+   margin: 30px 0;
+}
+.screen-first {
+   display: flex;
+   flex-direction: row;
+   height: 50vh;
+   width: 85%;
+}
+.screen-first_fa {
+   color: #7d7878;
+   font-size: 60px;
+   margin-right: 40px;
+   margin-top: 20px;
+}
+.screen-first_div {
+   display: block;
+   width: 90%;
+   background: linear-gradient(180deg,  #291934,
+ #955DBD);
+}
+.screen-first_p {
+   font-weight: 500;
+   font-size: 22px;
+   color: #ffffff;
+   text-transform: uppercase;
+   padding: 40px 90px;
+}
+.screen-second {
+   display: flex;
+   flex-direction: row;
+   margin: 50px 0;
+}
+.fa-at {
+   margin-right: 40px;
+}
+.screen-second_fa {
+   color: #7d7878;
+   font-size: 50px;
+   font-weight: 300;
+}
+.screen-second_div {
+   margin-top: 10px;
+}
+.screen-second_p {
+   color: #4F4F4F;
+   font-weight: 500;
+   font-size: 17px;
 }
