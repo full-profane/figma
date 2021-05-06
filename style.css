@@ -122,7 +122,7 @@ main {
    display: flex;
    flex-direction: column;
    align-items: center;
-   background-image:url(img/at-sign.png);
+   background-image:url(img/at-sign2.png);
    background-size: 100% 75%;
    background-repeat: no-repeat;
    height:  300vh;
@@ -190,3 +190,68 @@ main {
    font-weight: 500;
    font-size: 17px;
 }
+
+.email-part2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #BDBDBD;
+   height: 60vh;
+   width: 100%;
+}
+
+.part2-info {
+   display: flex;
+   flex-direction: row;
+   width: 55%;
+   height: 72%;
+}
+.response {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   width: 30%;
+   margin: 13px;
+   border-radius: 21px;
+   background: rgba(255,255,255,0.8);
+   box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.3);
+}
+
+.response_text {
+   font-size: 16px;
+   margin: 30px 10px 90px 10px;
+   text-align: center;
+   font-weight: 600;
+}
+
+.response_text_third {
+   margin-top: 50px;
+}
+
+.response_text_first {
+   margin-top: 60px;
+}
+
+.response-stars {
+   display: block;
+   position: absolute;
+   bottom: 40px;
+}
+
+.response-stars_fa {
+   color: #BD615D;
+   font-size: 14px;
+   margin-right: -4px;
+}
+
+.response_date {
+   display: block;
+   position: absolute;
+   bottom: 13px;
+   color: #828282;
+   font-weight: 400;
+   font-size: 13px;
+}
+
+
