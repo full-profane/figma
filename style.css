@@ -12,6 +12,7 @@ header {
    display: flex;
    justify-content: flex-end;
 }
+
 main {
    background:#e1e1e133;
 }
@@ -54,6 +55,7 @@ main {
    position: absolute;
    width: 100%;
 }
+
 .home-info {
    display: flex;
    flex-direction: column;
@@ -63,10 +65,12 @@ main {
    height: 100vh;
    background: linear-gradient(180deg,  #050505ed, #8d8d8dd6);
 }
+
 .info-text {
    margin:40px 0;
    width: 50%;
 }
+
 .home-title {
    color: #FFFFFF;
    font-weight: 600;
@@ -74,6 +78,7 @@ main {
    margin-bottom: 15px;
    margin-left: 20px;
 }
+
 .home-subtitle {
    color: #BDBDBD;
    font-weight: 600;
@@ -125,7 +130,7 @@ main {
    background-image:url(img/at-sign2.png);
    background-size: 100% 75%;
    background-repeat: no-repeat;
-   height:  300vh;
+   height:  260vh;
 }
 .email-part {
    display: flex;
@@ -133,6 +138,7 @@ main {
    width: 60%;
    align-items: center;
 }
+
 .part-info {
    display: flex;
    width: 100%;
@@ -144,48 +150,56 @@ main {
    flex-direction: column;
    margin: 20px 0;
 }
+
 .screen-first {
    display: flex;
    flex-direction: row;
    height: 50vh;
    width: 85%;
 }
+
 .screen-first_fa {
    color: #7d7878;
    font-size: 60px;
    margin-right: 40px;
    margin-top: 20px;
 }
+
 .screen-first_purple {
    display: block;
    width: 90%;
    background: linear-gradient(180deg,  #291934,
  #955DBD);
 }
+
 .screen-first_p {
    font-weight: 500;
    font-size: 22px;
    color: #ffffff;
    text-transform: uppercase;
    padding: 40px 90px;
-   letter-spacing: 3px;
 }
+
 .screen-second {
    display: flex;
    flex-direction: row;
    margin: 30px 0;
 }
+
 .fa-at {
    margin-right: 40px;
 }
+
 .screen-second_fa {
    color: #7d7878;
    font-size: 50px;
    font-weight: 300;
 }
+
 .screen-second_div {
    margin-top: 10px;
 }
+
 .screen-second_p {
    color: #4F4F4F;
    font-weight: 500;
@@ -197,23 +211,24 @@ main {
    align-items: center;
    justify-content: center;
    background: #BDBDBD;
-   height: 55vh;
+   height:22%;
    width: 100%;
 }
 
 .part2-info {
    display: flex;
    flex-direction: row;
-   width: 55%;
-   height: 72%;
+   width: 50%;
+   height: 65%;
 }
+
 .response {
    display: flex;
    flex-direction: column;
    align-items: center;
    position: relative;
-   width: 30%;
-   margin: 13px;
+   width: 28%;
+   margin-right: 30px;
    border-radius: 21px;
    background: rgba(255,255,255,0.8);
    box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.3);
@@ -262,4 +277,9 @@ main {
 #41808D );
 }
 
+.credits {
+   background: #E0E0E0;
+   display: flex;
+   justify-content: center;
+}
 
