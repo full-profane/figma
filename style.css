@@ -1,0 +1,266 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+.poppins {
+   font-family: 'Poppins', sans-serif;
+}
+
+header {
+   background:#333333;
+   display: flex;
+   justify-content: flex-end;
+}
+main {
+   background:#e1e1e133;
+}
+
+.header-main {
+   display: flex;
+   width: 52%;
+   justify-content: space-between;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo img {
+   height: 50%;
+}
+
+.menu {
+   display: flex;
+   font-weight: 600;
+   padding: 25px 45px;
+   color: #828282;
+   font-size: 20px;
+}
+
+.menu-item {
+   list-style: none;
+   margin-left: 50px;
+}
+
+.home {
+   display: block;
+   position: relative;
+   height: 100vh;
+}
+.home-img {
+   position: absolute;
+   width: 100%;
+}
+.home-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(180deg,  #050505ed, #8d8d8dd6);
+}
+.info-text {
+   margin:40px 0;
+   width: 50%;
+}
+.home-title {
+   color: #FFFFFF;
+   font-weight: 600;
+   font-size: 46px;
+   margin-bottom: 15px;
+   margin-left: 20px;
+}
+.home-subtitle {
+   color: #BDBDBD;
+   font-weight: 600;
+   font-size: 28px;
+   margin-left: 20px;
+}
+
+.home-btn {
+   margin: 30px 0;
+   border-radius: 20px;
+   border: none;
+   width: 35%;
+   font-weight: 700;
+   font-size: 18px;
+   text-transform: uppercase;
+   color: #fff;
+   background:  #BDBDBD;
+   padding: 15px 90px;
+}
+
+.description {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.description-info {
+   width: 80%;
+   margin: 30px 0;
+}
+
+.description_title {
+   font-weight: 600;
+   font-size: 32px;
+   margin: 10px 0;
+   color: #333333;
+}
+
+.description_description {
+   font-weight: 500;
+   font-size: 20px;
+   color: #333333;
+}
+
+.email {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image:url(img/at-sign2.png);
+   background-size: 100% 75%;
+   background-repeat: no-repeat;
+   height:  260vh;
+}
+.email-part {
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   align-items: center;
+}
+.part-info {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+}
+
+.part-screen {
+   display: flex;
+   flex-direction: column;
+   margin: 20px 0;
+}
+.screen-first {
+   display: flex;
+   flex-direction: row;
+   height: 50vh;
+   width: 85%;
+}
+.screen-first_fa {
+   color: #7d7878;
+   font-size: 60px;
+   margin-right: 40px;
+   margin-top: 20px;
+}
+.screen-first_purple {
+   display: block;
+   width: 90%;
+   background: linear-gradient(180deg,  #291934,
+ #955DBD);
+}
+.screen-first_p {
+   font-weight: 500;
+   font-size: 22px;
+   color: #ffffff;
+   text-transform: uppercase;
+   padding: 40px 90px;
+}
+.screen-second {
+   display: flex;
+   flex-direction: row;
+   margin: 30px 0;
+}
+.fa-at {
+   margin-right: 40px;
+}
+.screen-second_fa {
+   color: #7d7878;
+   font-size: 50px;
+   font-weight: 300;
+}
+.screen-second_div {
+   margin-top: 10px;
+}
+.screen-second_p {
+   color: #4F4F4F;
+   font-weight: 500;
+   font-size: 17px;
+}
+
+.email-part2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: #BDBDBD;
+   height:22%;
+   width: 100%;
+}
+
+.part2-info {
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   height: 65%;
+}
+.response {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   width: 28%;
+   margin-right: 30px;
+   border-radius: 21px;
+   background: rgba(255,255,255,0.8);
+   box-shadow: 6px 8px 6px rgba(0, 0, 0, 0.3);
+}
+
+.response_text {
+   font-size: 16px;
+   margin: 30px 10px 90px 10px;
+   text-align: center;
+   font-weight: 600;
+}
+
+.response_text_third {
+   margin-top: 50px;
+}
+
+.response_text_first {
+   margin-top: 60px;
+}
+
+.response-stars {
+   display: block;
+   position: absolute;
+   bottom: 40px;
+}
+
+.response-stars_fa {
+   color: #BD615D;
+   font-size: 14px;
+   margin-right: -4px;
+}
+
+.response_date {
+   display: block;
+   position: absolute;
+   bottom: 13px;
+   color: #828282;
+   font-weight: 400;
+   font-size: 13px;
+}
+
+.screen-first_green {
+   display: block;
+   width: 90%;
+   background: linear-gradient(180deg,  #162E33,
+#41808D );
+}
+
+.credits {
+   background: #E0E0E0;
+}
