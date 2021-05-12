@@ -21,7 +21,6 @@ main {
    position: relative;
 }
 
-
 .header-main {
    display: flex;
    width: 52%;
@@ -54,17 +53,18 @@ main {
 .menu-item:hover {
    color: #ffffff;
 }
+
 footer {
    background-image: url(../img/Footer_image.png);
    background-color: rgba(17, 17, 17, 0.07);
    background-size: 100%;
    display: flex;
+
    position: relative;
    flex-direction: column;
    justify-content: center;
    align-items: center;
 }
-
 
 .at-sing {
    position: absolute;
@@ -143,4 +143,3 @@ footer {
 .footer-copyright_link:hover {
    color: #ffffff;
 }
-

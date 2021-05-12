@@ -13,15 +13,6 @@ main {
    position: relative;
 }
 
-.contact-img {
-   display: block;
-   position: absolute;
-   width: 40%;
-   height: 800px;
-   right: 0;
-   bottom: 0;
-}
-
 .main-info {
    width: 50%;
    margin: auto;
@@ -59,4 +50,3 @@ main {
 #last_description {
    margin: 0;
 }
-
