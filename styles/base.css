@@ -57,9 +57,18 @@ footer {
    background-color: rgba(17, 17, 17, 0.07);
    background-size: 100%;
    display: flex;
+   position: relative;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+.contact-img {
+   display: block;
+   position: absolute;
+   width: 35%;
+   height: 800px;
+   right: 0;
+   bottom: 100px;
 }
 
 .footer-basis {
