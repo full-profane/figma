@@ -54,3 +54,31 @@ main {
    margin: 0;
 }
 
+@media (max-width: 1024px) {
+   .main-info {
+   width: 50%;
+   padding-top: 200px;
+   }
+}
+
+@media (max-width: 768px) {
+   .main-info {
+   width: 70%;
+   padding-top: 150px;
+   }
+}
+@media (max-width: 416px) {
+   .main-info {
+   width: 90%;
+   padding-top: 100px;
+   }
+   .main-info_title {
+   font-size: 35px;
+   }
+
+   .main-info_subtitle {
+   font-size: 17px;
+   }
+
+}
+
