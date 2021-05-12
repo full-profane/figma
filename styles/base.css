@@ -18,7 +18,9 @@ header {
 
 main {
    background:#e1e1e133;
+   position: relative;
 }
+
 
 .header-main {
    display: flex;
@@ -62,13 +64,13 @@ footer {
    justify-content: center;
    align-items: center;
 }
-.contact-img {
-   display: block;
+
+.at-sing {
    position: absolute;
    width: 35%;
    height: 800px;
    right: 0;
-   bottom: 100px;
+   bottom: 130px;
 }
 
 .footer-basis {
