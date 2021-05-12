@@ -74,15 +74,6 @@ footer {
    bottom: 130px;
 }
 
-.contact-img {
-   display: block;
-   position: absolute;
-   width: 35%;
-   height: 800px;
-   right: 0;
-   bottom: 100px;
-}
-
 .footer-basis {
    display: flex;
    width: 50%;
@@ -152,3 +143,4 @@ footer {
 .footer-copyright_link:hover {
    color: #ffffff;
 }
+
