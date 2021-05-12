@@ -8,7 +8,7 @@
 }
 
 header {
-   background:#333333;
+   background:#333332;
    display: flex;
    justify-content: flex-end;
    position: fixed;
@@ -18,6 +18,7 @@ header {
 
 main {
    background:#e1e1e133;
+   position: relative;
 }
 
 .header-main {
@@ -53,15 +54,24 @@ main {
    color: #ffffff;
 }
 
-
 footer {
    background-image: url(../img/Footer_image.png);
    background-color: rgba(17, 17, 17, 0.07);
    background-size: 100%;
    display: flex;
+
+   position: relative;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+
+.at-sing {
+   position: absolute;
+   width: 35%;
+   height: 800px;
+   right: 0;
+   bottom: 130px;
 }
 
 .footer-basis {
