@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
    margin: 0;
    padding: 0;
@@ -7,6 +8,8 @@
    font-family: 'Poppins', sans-serif;
 }
 
+=======
+>>>>>>> d6ccb7fced3e98c1e26a71cbe6a9b9a389c39e50
 .home {
    display: block;
    position: relative;
@@ -410,3 +413,7 @@
    background: #ffffff;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d6ccb7fced3e98c1e26a71cbe6a9b9a389c39e50
