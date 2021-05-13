@@ -99,7 +99,7 @@
    background-image:url(img/at-sign.png);
    background-size: 100% 88%;
    background-repeat: no-repeat;
-   height:  260vh;
+   height: 300vh;
 }
 .email-part {
    display: flex;
@@ -158,6 +158,9 @@
    display: flex;
    flex-direction: row;
    margin: 30px 0;
+}
+.screen-mobile {
+   display: none;
 }
 
 .fa-at {
@@ -450,7 +453,7 @@
 
    .email {
       background-image: none;
-      height: 300vh;
+      height: 360vh;
    }
    .email-part {
       width: 90%;
@@ -485,6 +488,7 @@
    }
 
    .screen-exclude {
+      display: block;
       margin: 0;
       position: absolute;
       top: 50%;
@@ -499,7 +503,7 @@
    }
 
    .email-part2 {
-      height: 25%;
+      height: 19%;
    }
    .part2-info {
       flex-direction: column;
@@ -590,6 +594,30 @@
       margin: auto;
       border-radius: 30px;
       font-size: 20px;
+   }
+
+   .screen-mobile {
+      display: flex;
+      flex-direction:row;
+      padding-left:20px;
+      color: #333333;
+      font-weight: 500;
+      margin-bottom: 25px;
+   }
+
+   .screen-mobile_fa {
+      margin-right: 20px;
+      color: #000000;
+   }
+
+   .screen-mobtext_title {
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+   }
+
+   .screen-mobtext_subtitle {
+      font-size: 15px;
    }
 
 
