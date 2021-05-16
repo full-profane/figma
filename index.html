@@ -4,6 +4,7 @@
    <title>Email verifier</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
    <link rel="stylesheet" type="text/css" href="styles/style.css">
    <link rel="stylesheet" type="text/css" href="styles/base.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,26 +13,29 @@
 </head>
 <body>
    <header>
-      <div class="header-main">
+      <div class="header-main poppins">
          <div class="logo">
             <a href="index.html"><img class="logo-img" src ="img/Group42.png"></a>
          </div>
-         <div class="header-burger">
-            <i class="fas fa-bars burger__fa"></i>
-         </div>
-         <nav class="menu poppins">
-            <li class="menu-item">Verifier</li>
-            <li class="menu-item">Finder</li>
-            <li class="menu-item">Contact</li>
-         </nav>
+         <div class="burger-menu">
+         <input id="menu-toggle" type="checkbox" />
+         <label class="menu-btn" for="menu-toggle">
+         <span></span>
+         </label>
+         <nav class="menubox">
+            <li><a class="menu-item" href="#verifier">Verifier</a></li>
+            <li><a class="menu-item" href="#finder">Finder</a></li>
+            <li><a class="menu-item" href="#contact">Contact</a></li>
+      </nav>
       </div>
+   </div>
    </header>
    <main class="poppins">
       <div class="home">
          <div class="home-info">
             <div class="info-text">
                <h2 class="home-title">We brought email search and verification to where your data is.</h2>
-               <h2 class="home-title">To your Google Sheets</h2>
+               <h2 class="home-title home-title2">To your Google Sheets.</h2>
                <p class="home-subtitle">Save your time in having to learn multiple web app’s and reload your data between them. </p>
                <p class="home-subtitle">Leave this clutter behind</p>
             </div>
@@ -39,6 +43,7 @@
          </div>
       </div>
       <div class="email">
+         <a name ="verifier" class="ancor"></a>
          <div class="email-part">
             <div class="description">
                <div class="description-info">
@@ -124,6 +129,7 @@
             </div>
          </div>
          <div class="email-part">
+            <a  name ="finder"  class="ancor"></a>
             <div class="description">
                <div class="description-info">
                   <h2 class="description_title">Find business emails by name and company domain</h2>
@@ -229,6 +235,7 @@
          </div>
       </div>
       <div class="contact">
+         <a  name ="contact"  class="ancor"></a>
          <div class="contact-forms">
             <input type="email" id="forms_email" placeholder="Email">
             <button id="forms_btn">contact us</button>
