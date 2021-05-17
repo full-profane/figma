@@ -44,7 +44,7 @@
 }
 
 .home-title2 {
-   margin-bottom: 20px;
+   margin-bottom: 30px;
 }
 
 .home-subtitle {
@@ -64,7 +64,7 @@
    text-transform: uppercase;
    color: #fff;
    background:  #BDBDBD;
-   padding: 15px 90px;
+   padding: 20px 90px;
 }
 
 .home-btn_fa{
@@ -199,7 +199,7 @@
    align-items: center;
    justify-content: center;
    background: #BDBDBD;
-   height:22%;
+   height:20%;
    width: 100%;
 }
 
@@ -232,6 +232,10 @@
 
 .response_text_third {
    margin-top: 50px;
+}
+
+.response_text_second{
+   margin-top:-90px;
 }
 
 .response_text_first {
@@ -407,7 +411,7 @@
    width: 41%;
    border-radius: 40px;
    border: none;
-   padding:  15px 15px;
+   padding:  16px 0;
    color: #ffffff;
    text-transform: uppercase;
    font-size: 16px;
@@ -415,8 +419,15 @@
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
+
+#forms_btn:hover {
+    color: rgba(130,130,130,1);
+    background-color: #ffffff;
+    cursor: pointer;
+   }
+
 #forms_comment {
-   width: 100%;
+   width: 98%;
    margin-top: 40px;
    padding: 15px 0 15px 15px;
    border-radius: 40px;
@@ -434,8 +445,8 @@
 
    .home-btn {
       width: 55%;
-      font-size: 20px;
-      padding: 20px 90px;
+      font-size: 19px;
+      padding: 19px 90px;
    }
 
    .home-title {
@@ -446,8 +457,86 @@
       line-height: 30px;
    }
 
+   .email {
+      height: 320vh;
+      background-size: 100% 80%;
+   }
+
    .email-part {
       width: 70%;
+   }
+
+   .email-part2 {
+      height: 20%;
+   }
+
+   .part2-info {
+      width: 53%;
+   }
+
+   .credits-info {
+      width: 70%;
+   }
+
+   .faq-info {
+      width: 75%;
+   }
+
+}
+
+@media (max-width: 992px) {
+   .home {
+      height: 103vh;
+   }
+
+   .info-text {
+      width: 73%;
+   }
+
+   .home-title {
+      font-size: 43px;
+   }
+
+   .home-subtitle {
+      font-size: 26px;
+   }
+
+   .home-btn {
+      width: 60%;
+      font-size: 18px;
+      padding: 15px 50px;
+   }
+
+   .email-part {
+      width: 80%;
+   }
+
+   .screen-first {
+      width: 90%;
+   }
+
+   .part2-info {
+      width: 64%;
+   }
+
+   .response_text_second {
+      margin-top: -70px;
+   }
+
+   .credits-info {
+      width: 75%;
+   }
+
+   .faq-info {
+      width: 90%;
+   }
+
+   .faq-part {
+      margin: 15px;
+   }
+
+   .contact-forms {
+      width: 60%;
    }
 
 }
@@ -625,6 +714,7 @@
 
    #forms_comment {
       order: 2;
+      width: 100%;
       margin-bottom: 40px;
       border-radius: 30px;
       font-size: 16px;
@@ -633,7 +723,7 @@
    #forms_btn {
       margin-top: 40px;
       order: 3;
-      width: 104%;
+      width: 103%;
       margin: auto;
       border-radius: 30px;
       font-size: 20px;
