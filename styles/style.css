@@ -108,7 +108,6 @@
    background-image:url(../img/at-sign.png);
    background-size: 100% 88%;
    background-repeat: no-repeat;
-   height: 290vh;
 }
 .email-part {
    display: flex;
@@ -199,7 +198,6 @@
    align-items: center;
    justify-content: center;
    background: #BDBDBD;
-   height:20%;
    width: 100%;
 }
 
@@ -208,8 +206,7 @@
    flex-direction: row;
    justify-content: space-around;
    width: 45%;
-   height: 65%;
-   padding: 90px 0;
+   padding: 70px 0;
 }
 
 .response {
@@ -458,16 +455,11 @@
    }
 
    .email {
-      height: 320vh;
       background-size: 100% 80%;
    }
 
    .email-part {
       width: 70%;
-   }
-
-   .email-part2 {
-      height: 20%;
    }
 
    .part2-info {
@@ -585,7 +577,6 @@
 
    .email {
       background-image: none;
-      height: 360vh;
    }
    .email-part {
       width: 90%;
@@ -634,9 +625,6 @@
       padding: 13px 20px;
    }
 
-   .email-part2 {
-      height: 19%;
-   }
    .part2-info {
       flex-direction: column;
       width: 85%;
@@ -789,8 +777,8 @@
 
    .email {
       background-image: none;
-      height: 360vh;
    }
+
    .email-part {
       width: 90%;
    }

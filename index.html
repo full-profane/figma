@@ -23,7 +23,7 @@
          <span></span>
          </label>
          <nav class="menubox">
-            <li><a class="menu-item" href="#verifier">Verifier</a></li>
+            <li><a onclick="toggle()" class="menu-item" href="#verifier">Verifier</a></li>
             <li><a class="menu-item" href="#finder">Finder</a></li>
             <li><a class="menu-item" href="#contact">Contact</a></li>
       </nav>
@@ -266,5 +266,10 @@
          <a href="Terms_of_use.html" class="footer-copyright_link">Terms of use</a>
       </div>
    </footer>
+   <script type="text/javascript">
+   function toggle() {
+       ("#menu-toggle").prop("checked", false);
+}
+   </script>
 </body>
 </html>
