@@ -12,23 +12,22 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-   <header>
-      <div class="header-main poppins">
-         <div class="logo">
-            <a href="index.html"><img class="logo-img" src ="img/Group42.png"></a>
+   <header class="header">
+      <div class="container poppins">
+         <div class="header_body">
+            <div class="logo">
+               <a href="index.html"><img class="logo-img" src ="img/Group42.png"></a>
+            </div>
+            <div class="header_burger">
+               <span></span>
+            </div>
+            <nav class="header_menu">
+               <li><a class="menu-item" href="#verifier">Verifier</a></li>
+               <li><a class="menu-item" href="#finder">Finder</a></li>
+               <li><a class="menu-item" href="#contact">Contact</a></li>
+            </nav>
          </div>
-         <div class="burger-menu">
-         <input id="menu-toggle" type="checkbox" />
-         <label class="menu-btn" for="menu-toggle">
-         <span></span>
-         </label>
-         <nav class="menubox">
-            <li><a onclick="toggle()" class="menu-item" href="#verifier">Verifier</a></li>
-            <li><a class="menu-item" href="#finder">Finder</a></li>
-            <li><a class="menu-item" href="#contact">Contact</a></li>
-      </nav>
       </div>
-   </div>
    </header>
    <main class="poppins">
       <div class="home">
@@ -256,10 +255,7 @@
          <a href="Terms_of_use.html" class="footer-copyright_link">Terms of use</a>
       </div>
    </footer>
-   <script type="text/javascript">
-   function toggle() {
-       ("#menu-toggle").prop("checked", false);
-}
-   </script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript"  src='leadlist.js'></script>
 </body>
 </html>

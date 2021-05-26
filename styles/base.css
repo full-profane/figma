@@ -7,22 +7,48 @@
    font-family: 'Poppins', sans-serif;
 }
 
-header {
+.header {
    background:#333332;
    display: flex;
    justify-content: flex-end;
    position: fixed;
    width: 100%;
-   z-index: 10;
+   z-index: 100;
 }
 
-main {
-   background:#e1e1e133;
-   position: relative;
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#333332;
+  z-index: 2;
+}
+
+.header_body {
+  width: 95%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_menu {
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  align-items: center;
+  list-style: none;
+}
+
+.header_burger {
+  display: none;
 }
 
 
-.header-main {
+.container {
    display: flex;
    width: 52%;
    justify-content: space-between;
@@ -33,23 +59,12 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 3;
+   padding: 10px 0 10px 0;
 }
 
 .logo-img {
    height: 45px;
-}
-
-.menubox {
-   display: flex;
-   font-weight: 600;
-   padding: 25px 45px;
-   color: #828282;
-   font-size: 20px;
-   list-style: none;
-}
-
-#menu-toggle  {
-display: none;
 }
 
 .menu-item {
@@ -63,6 +78,13 @@ display: none;
 .menu-item:hover {
    color: #ffffff;
 }
+
+
+main {
+   background:#e1e1e133;
+   position: relative;
+}
+
 footer {
    background-image: url(../img/Footer_image.png);
    background-color: rgba(17, 17, 17, 0.07);
@@ -187,101 +209,89 @@ footer {
 }
 
 @media (max-width:780px) {
-   header{
-      padding: 8px 0;
+  header{
+    padding: 8px 0;
    }
 
-   .logo-img {
-      height: 35px;
+  .logo-img {
+    height: 35px;
    }
 
-  .menu {
-    display: none;
+  .header_burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+   }
+
+  .header_burger::before, .header_burger::after {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
   }
 
-   .menu-btn{
-     display: flex;
-     align-items: center;
-     position: absolute;
-     top: 15px;
-     right:10px;
-     width: 26px;
-     height: 26px;
-     cursor: pointer;
-     z-index: 1;
-   }
+  .header_burger::before {
+    top: 0;
+  }
 
-   .menu-btn > span,
-   .menu-btn > span::before,
-   .menu-btn > span::after {
-     display: block;
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     background-color: #d5d5d5;
-     transition-duration: .25s;
-   }
-   .menu-btn > span::before {
-     content: '';
-     top: -8px;
-   }
-   .menu-btn > span::after {
-     content: '';
-     top: 8px;
-   }
+  .header_burger::after {
+    bottom: 0;
+  }
 
-   .menubox{
-     display: block;
-     position: fixed;
-     visibility: hidden;
-     top: 0;
-     right: -100%;
-     left: 0;
-     width: 100%;
-     height: 15%;
-     margin: 0;
-     padding: 50px 0;
-     list-style: none;
-     background-color: #333332;
-     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-     transition-duration: .20s;
-   }
+  .header_burger span {
+    content: '';
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+  }
 
-   .menu-item {
-     display: block;
-     padding: 12px 24px;
-     color: #828282;
-     text-align: right;
-     font-family: 'Roboto', sans-serif;
-     font-size: 20px;
-     font-weight: 600;
-     text-decoration: none;
+  .header_burger.active:before {
+    transform: rotate(45deg);
+    top:9px;
+  }
 
-   }
-   .menu-item:hover {
-     background-color: #ffffff;
-     background:  #333332;
-   }
+  .header_burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
 
-   #menu-toggle{
-     opacity: 0;
-   }
+  .header_burger.active span {
+    transform: scale(0);
+    transition: all 0.3s ease 0s;
+  }
 
-   #menu-toggle:checked ~ .menu-btn > span{
-     transform: rotate(45deg);
-   }
-   #menu-toggle:checked ~ .menu-btn > span::before{
-     top: 0;
-     transform: rotate(0);
-   }
-   #menu-toggle:checked ~ .menu-btn > span::after{
-     top: 0;
-     transform: rotate(90deg);
-   }
-   #menu-toggle:checked ~ .menubox{
-     visibility: visible;
-     left: 0;
-   }
+  .header_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -100%;
+    padding: 70px 0 0 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #333333;
+    transition: all 0.3s ease 0s;
+    z-index: 1;
+  }
+
+  .header_menu.active li {
+    font-size: 30px;
+    padding: 20px 0 0  0;
+    text-transform: uppercase;
+  }
+
+  .header_menu.active {
+    top: 0;
+  }
+
 
    footer {
       background-image: url(../img/Union.png);

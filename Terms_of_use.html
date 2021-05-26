@@ -4,32 +4,30 @@
    <title> Terms of Use</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" type="text/css" href="styles/base.css">
-   <link rel="stylesheet" type="text/css" href="styles/terms_of_use.css">
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header>
-      <div class="header-main">
-         <div class="logo">
-            <a href="index.html"><img class="logo-img" src ="img/Group42.png"></a>
-         </div>
-         <div class="burger-menu">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-btn" for="menu-toggle">
-            <span></span>
-            </label>
-            <nav class="menubox poppins">
-               <li><a class="menu-item" href="index.html#verifier">Verifier</a></li>
-               <li><a class="menu-item" href="index.html#finder">Finder</a></li>
-               <li><a class="menu-item" href="index.html#contact">Contact</a></li>
+   <header class="header">
+      <div class="container poppins">
+         <div class="header_body">
+            <div class="logo">
+               <a href="index.html"><img class="logo-img" src ="img/Group42.png"></a>
+            </div>
+            <div class="header_burger">
+               <span></span>
+            </div>
+            <nav class="header_menu">
+               <li><a class="menu-item" href="#verifier">Verifier</a></li>
+               <li><a class="menu-item" href="#finder">Finder</a></li>
+               <li><a class="menu-item" href="#contact">Contact</a></li>
             </nav>
-       </div>
+         </div>
       </div>
    </header>
-   <main  class="poppins">
+   <main  class="poppins main">
       <div class="main-info">
          <h1 class="main-info_title"> Terms of Use</h1>
          <h3 class="main-info_subtitle">Effective: November 19, 2019</h3>
@@ -77,7 +75,7 @@
             <p class="main-info_description">We assume no legal responsibility for their misuse by end users, nor do we make any guarantees of their quality or reliability.</p>
             <p class="main-info_description">To the maximum extent permitted by applicable law we assume no liability or responsibility for any:</p>
             <ul>
-               <li class="info-list2_rule">Errors, mistakes, or inaccuracies of content</li>
+               <li class="info-list2_rule" id="list-upper_roman">Errors, mistakes, or inaccuracies of content</li>
                <li class="info-list2_rule">Personal injury or property damage, of any nature whatsoever, resulting from your access to or use of our services</li>
                <li class="info-list2_rule">Any unauthorized access to or use of our secure servers and/or any and all personal information stored therein</li>
                <li class="info-list2_rule">Any interruption or cessation of transmission to or from the services</li>
@@ -116,5 +114,7 @@
          <a href="Terms_of_use.html" class="footer-copyright_link">Terms of use</a>
       </div>
    </footer>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script type="text/javascript"  src='leadlist.js'></script>
 </body>
 </html>
